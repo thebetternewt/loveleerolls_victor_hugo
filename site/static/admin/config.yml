@@ -27,15 +27,15 @@ collections:
     editor:
       preview: false
     files:
-      - name: "shipping"
-        label: "Shipping Settings"
-        file: "site/data/settings.json"
+      - name: "delivery_days"
+        label: "Delivery Days"
+        file: "site/data/delivery_days.json"
         description: "Settings for delivery and pickup days"
         fields:
-          - {label: "Deliver Sundays", name: "deliver_sundays", widget: "boolean", required: false}
-          - {label: "Deliver Mondays", name: "deliver_mondays", widget: "boolean", required: false}
-          - {label: "Deliver Tuesdays", name: "deliver_tuesdays", widget: "boolean", required: false}
-          - {label: "Deliver Wednesdays", name: "deliver_wednesdays", widget: "boolean", required: false}
-          - {label: "Deliver Thursdays", name: "deliver_thursdays", widget: "boolean", required: false}
-          - {label: "Deliver Fridays", name: "deliver_fridays", widget: "boolean", required: false}
-          - {label: "Deliver Saturdays", name: "deliver_saturdays", widget: "boolean", required: false}
+          - {label: "Sundays", name: "sundays", widget: "boolean", required: false}
+          - {label: "Mondays", name: "mondays", widget: "boolean", required: false}
+          - {label: "Tuesdays", name: "tuesdays", widget: "boolean", required: false}
+          - {label: "Wednesdays", name: "wednesdays", widget: "boolean", required: false}
+          - {label: "Thursdays", name: "thursdays", widget: "boolean", required: false}
+          - {label: "Fridays", name: "fridays", widget: "boolean", required: false}
+          - {label: "Saturdays", name: "saturdays", widget: "boolean", required: false}
