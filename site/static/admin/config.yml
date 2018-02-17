@@ -32,10 +32,10 @@ collections:
         file: "site/data/settings.json"
         description: "Settings for delivery and pickup days"
         fields:
-          - {label: "Deliver Sundays", name: "deliver_sundays", widget: "boolean"}
-          - {label: "Deliver Mondays", name: "deliver_mondays", widget: "boolean"}
-          - {label: "Deliver Tuesdays", name: "deliver_tuesdays", widget: "boolean"}
-          - {label: "Deliver Wednesdays", name: "deliver_wednesdays", widget: "boolean"}
-          - {label: "Deliver Thursdays", name: "deliver_thursdays", widget: "boolean"}
-          - {label: "Deliver Fridays", name: "deliver_fridays", widget: "boolean"}
-          - {label: "Deliver Saturdays", name: "deliver_saturdays", widget: "boolean"}
+          - {label: "Deliver Sundays", name: "deliver_sundays", widget: "boolean", required: false}
+          - {label: "Deliver Mondays", name: "deliver_mondays", widget: "boolean", required: false}
+          - {label: "Deliver Tuesdays", name: "deliver_tuesdays", widget: "boolean", required: false}
+          - {label: "Deliver Wednesdays", name: "deliver_wednesdays", widget: "boolean", required: false}
+          - {label: "Deliver Thursdays", name: "deliver_thursdays", widget: "boolean", required: false}
+          - {label: "Deliver Fridays", name: "deliver_fridays", widget: "boolean", required: false}
+          - {label: "Deliver Saturdays", name: "deliver_saturdays", widget: "boolean", required: false}
