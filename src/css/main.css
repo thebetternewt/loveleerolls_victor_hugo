@@ -3,6 +3,10 @@
  */
 @import "imports/reset.css";
 
+/* VARIABLES */
+:root {
+	--primary-bg-color: #291711;
+}
 
 /*
   Or add your statements here:
@@ -10,5 +14,30 @@
 body{
   font-family: sans-serif;
   font-size: 1em;
+  padding-top: 100px;
   text-align: center;
+}
+
+.navbar {
+  background-color: var(--primary-bg-color) !important;
+  height: 100px;
+  max-height: 200px;
+}
+.navbar-item {
+  color: #fff !important;
+  &:hover {
+    background-color: var(--primary-bg-color) !important;
+  }
+}
+
+#navbar-logo {
+  position: relative;
+  width: 180px;
+  & img {
+    width: 100%;
+    left: 0;
+    max-height: none;
+    position: absolute;
+    top: 1rem;
+  }
 }

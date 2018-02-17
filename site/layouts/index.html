@@ -1,9 +1,15 @@
 {{ partial "header" . }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+{{ $products := getJSON "/data/products.json" }}
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      {{ range $products }}
+        {{ partial "product.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
 
 {{ partial "footer" . }}

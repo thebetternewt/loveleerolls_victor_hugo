@@ -6,5 +6,26 @@
     <base href="{{ $.Site.BaseURL }}">
     <title>{{ $.Site.Title }}</title>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   </head>
   <body>
+    <div class="navbar is-fixed-top level" role="navbar" aria-label="main navigation">
+        <a href="#" class="navbar-item level-item">Home</a>
+        <a href="#" class="navbar-item level-item">About</a>
+        <a href="#" class="navbar-item" id="navbar-logo">
+          <img src="/images/lovelee_logo.png" alt="LoveLee Rolls">
+        </a>
+        <a href="#" class="navbar-item level-item">Shop</a>
+        <a href="#" class="snipcart-checkout navbar-item level-item">
+          <i class="fa fa-shopping-cart"></i>
+          <div class="snipcart-summary">
+            (<span class="snipcart-total-items"></span>)
+          </div>
+        </a>
+    </div>
