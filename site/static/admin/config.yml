@@ -10,7 +10,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: 'products'
     label: 'Products'
-    file: '/data/products.json'
+    file: '/content/products'
     slug: "{{slug}}"
     create: true
     fields:
