@@ -48,6 +48,6 @@ collections:
             name: "blackout_dates"
             widget: "list"
             fields:
-              - {label: "Start Date", name: "start_date", widget: "date"}
-              - {label: "End Date", name: "end_date", widget: "date"}
+              - {label: "Start Date", name: "start_date", widget: "date", default: ""}
+              - {label: "End Date", name: "end_date", widget: "date", default: ""}
 
