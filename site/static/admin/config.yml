@@ -20,3 +20,22 @@ collections:
       - {label: "Image", name: "image", widget: "string"}
       - {label: "Body", name: "body", widget: "string"}  
       - {label: "Slug", name: "slug", widget: "string" }
+
+  - label: "Settings"
+    name: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "shipping"
+        label: "Shipping Settings"
+        file: "site/data/settings.json"
+        description: "Settings for delivery and pickup days"
+        fields:
+          - {label: "Deliver Sundays", name: "deliver_sundays", widget: "boolean"}
+          - {label: "Deliver Mondays", name: "deliver_mondays", widget: "boolean"}
+          - {label: "Deliver Tuesdays", name: "deliver_tuesdays", widget: "boolean"}
+          - {label: "Deliver Wednesdays", name: "deliver_wednesdays", widget: "boolean"}
+          - {label: "Deliver Thursdays", name: "deliver_thursdays", widget: "boolean"}
+          - {label: "Deliver Fridays", name: "deliver_fridays", widget: "boolean"}
+          - {label: "Deliver Saturdays", name: "deliver_saturdays", widget: "boolean"}
