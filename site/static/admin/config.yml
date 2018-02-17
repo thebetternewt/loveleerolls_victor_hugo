@@ -27,10 +27,10 @@ collections:
     editor:
       preview: false
     files:
-      - name: "delivery_days"
-        label: "Delivery Days"
+      - label: "Delivery Days"
+        name: "delivery_days"
         file: "site/data/delivery_days.json"
-        description: "Settings for delivery and pickup days"
+        description: "Choose available delivery and pickup days"
         fields:
           - {label: "Sundays", name: "sundays", widget: "boolean", required: false}
           - {label: "Mondays", name: "mondays", widget: "boolean", required: false}
@@ -39,3 +39,15 @@ collections:
           - {label: "Thursdays", name: "thursdays", widget: "boolean", required: false}
           - {label: "Fridays", name: "fridays", widget: "boolean", required: false}
           - {label: "Saturdays", name: "saturdays", widget: "boolean", required: false}
+      - name: "blackout_dates"
+        label: "Blackout Dates"
+        file: "site/data/blackout_dates.json"
+        description: "Set blackout dates"
+        fields:
+          - label: "Blackout Dates"
+            name: "blackout_dates"
+            widget: "list"
+            fields:
+              - {label: "Start Date", name: "start_date", widget: "date"}
+              - {label: "End Date", name: "end_date", widget: "date"}
+
