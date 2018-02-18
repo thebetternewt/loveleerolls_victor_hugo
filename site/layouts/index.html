@@ -2,14 +2,36 @@
 
 {{ $products := getJSON "/data/products.json" }}
 
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      {{ range $products }}
-        {{ partial "product.html" . }}
-      {{ end }}
+<div class="wrapper">
+  <section class="hero">
+    <h1>Melt in your mouth delicious...</h1>
+    <button class="cta-btn">Order Now</button>
+    </div>
+  </section>
+  <section class="promo">
+    <span>Display promo code PROMO2018 here.</span>
+  </section>
+  <!-- <section class="section">
+    <div class="container">
+      {{ range $products }} {{ partial "product.html" . }} {{ end }}
+    </div>
+    </div>
+  </section> -->
+
+  <div class="section news-signup">
+    <div class="row col-2">
+      <div class="col">
+        Sign up.
+      </div>
+      <div class="col">
+        <form >
+          <input type="email" placeholder="your@email.com">
+          <input type="submit" value="SUBSCRIBE">
+        </form>
+      </div>
     </div>
   </div>
-</section>
+</div>
+
 
 {{ partial "footer" . }}

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <base href="{{ $.Site.BaseURL }}">
     <title>{{ $.Site.Title }}</title>
+    
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/main.css"/>
-
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
     <!-- SnipCart -->
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
@@ -20,17 +20,26 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <div class="navbar is-fixed-top level" role="navbar" aria-label="main navigation">
-        <a href="#" class="navbar-item level-item">Home</a>
-        <a href="#" class="navbar-item level-item">About</a>
-        <a href="#" class="navbar-item" id="navbar-logo">
-          <img src="/images/lovelee_logo.png" alt="LoveLee Rolls">
+    <ul class="navigation">
+      <li>
+        <a href="/products">Coffee</a>
+      </li>
+      <li>
+        <a href="/products">Rolls</a>
+      </li>
+      <li>
+        <a href="/" id="logo">
+          <img src="/images/lovelee_logo.png" alt="Lovelee Rolls" class="logo">
         </a>
-        <a href="#" class="navbar-item level-item">Shop</a>
-        <a href="#" class="snipcart-checkout navbar-item level-item">
-          <i class="fa fa-shopping-cart"></i>
-          <div class="snipcart-summary">
-            (<span class="snipcart-total-items"></span>)
-          </div>
-        </a>
-    </div>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <a href="#" id="mobile-menu-button">
+      <i class="fa fa-bars fa-3x"></i>
+    </a>
+
