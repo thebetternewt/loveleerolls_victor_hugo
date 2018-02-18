@@ -1,6 +1,5 @@
 {
-  "deliver_mondays": true,
-  "deliver_wednesdays": false,
-  "deliver_thursdays": false,
-  "deliver_fridays": true
+  "sundays": true,
+  "tuesdays": true,
+  "fridays": true
 }
