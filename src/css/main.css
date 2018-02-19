@@ -37,6 +37,15 @@ a {
   color: inherit;
 }
 
+/* Remove border radius on input fields on iOS devices */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+
 .navbar {
   background-color: rgba(256, 256, 256, 0.95);
   box-shadow: 3px 3px 7px #555;
@@ -311,11 +320,6 @@ a {
 }
 
 @media (max-width: 799px) {
-  input {
-    border: none;
-    border-radius: none;
-  }
-
   .container {
     padding: 0 20px;
   }
