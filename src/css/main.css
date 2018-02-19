@@ -65,8 +65,6 @@ a {
   text-transform: uppercase;
   width: 100%;
   & a {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--primary-bg-color);
     display: block;
     padding: 1.3em 0 1em;
