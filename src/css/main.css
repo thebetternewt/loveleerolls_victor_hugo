@@ -406,6 +406,8 @@ input[type="submit"] {
   }
 
   #mobileMenuCloseBtn {
+    background-color: none;
+    border: none;
     color: #fff;
     cursor: pointer;
     left: 0;
