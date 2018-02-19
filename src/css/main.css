@@ -95,10 +95,51 @@ input[type="submit"] {
 
 #mobile-menu-button {
   color: var(--primary-bg-color);
+  cursor: pointer;
+  position: fixed;
+  top: 35px;
+  left: 20px;
+  z-index: 21;
+}
+
+#shopping-bag-button {
+  color: var(--primary-bg-color);
+  cursor: pointer;
   position: fixed;
   top: 35px;
   right: 20px;
   z-index: 21;
+}
+
+#mobileNavContainer {
+  display: none;
+  background-color: var(--primary-bg-color);
+  background-color: rgba(41, 23, 17, 0.95);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 25;
+
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+}
+
+.mobile-nav {
+  color: #fff;
+  font-size: 2.0rem;
+  font-weight: 400;
+  list-style: none;
+  margin-top: 80px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  & li {
+    display: block;
+    padding: 0.5em 0;
+    width: 100%;
+  }
 }
 
 .wrapper {
@@ -300,10 +341,10 @@ input[type="submit"] {
 }
 
 /* Round button corners */
-.btn, input[type="button"],
+/* .btn, input[type="button"],
 input[type="submit"] {
   border-radius: 7px;
-}
+} */
 
 
 @media screen and (min-width: 800px) {
@@ -360,8 +401,17 @@ input[type="submit"] {
       }
     }
   }
-  #mobile-menu-button {
+  #mobile-menu-button, #shopping-bag-button {
     top: 20px;
+  }
+
+  #mobileMenuCloseBtn {
+    color: #fff;
+    cursor: pointer;
+    left: 0;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
   }
 
   #logo {
