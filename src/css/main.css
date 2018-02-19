@@ -37,6 +37,11 @@ a {
   color: inherit;
 }
 
+input {
+  border: none;
+  border-radius: none;
+}
+
 .navbar {
   background-color: rgba(256, 256, 256, 0.95);
   box-shadow: 3px 3px 7px #555;
