@@ -37,7 +37,8 @@ a {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  background-color: #291711;
+  background-color: rgba(256, 256, 256, 0.8);
+  color: var(--primary-bg-color);
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
   font-size: 1.4em;
