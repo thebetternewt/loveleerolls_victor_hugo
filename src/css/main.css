@@ -3,6 +3,9 @@
  */
 /* @import "imports/reset.css"; */
 
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
+
 /* VARIABLES */
 :root {
   --primary-bg-color: #291711;
@@ -31,14 +34,24 @@ a {
   color: inherit;
 }
 
+.navbar {
+  background-color: rgba(256, 256, 256, 0.95);
+  box-shadow: 3px 3px 7px #555;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
 .navigation {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  background-color: rgba(256, 256, 256, 0.95);
-  box-shadow: 3px 3px 7px #555;
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
   font-size: 1.4em;
@@ -47,10 +60,8 @@ a {
   list-style: none;
   margin: 0;
   max-height: 100px;
+  max-width: 1280px;
   padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   text-transform: uppercase;
   width: 100%;
   & a {
@@ -74,9 +85,10 @@ a {
 
 #mobile-menu-button {
   color: var(--primary-bg-color);
-  position: absolute;
+  position: fixed;
   top: 35px;
   right: 20px;
+  z-index: 21;
 }
 
 .wrapper {
@@ -142,6 +154,11 @@ a {
   &.btn-accent {
     background-color: var(--accent-color);
   }
+  &.btn-lg {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 1.5em;
+  }
 }
 
 .separator {
@@ -149,7 +166,8 @@ a {
   display: block;
   height: 5px;
   margin: 20px auto;
-  width: 75%;
+  max-width: 1280px;
+  width: 80%;
 }
 
 .hero {
@@ -161,7 +179,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 40vh;
-  padding: 150px 2rem 2rem;
+  padding: 200px 2rem 4rem;
   text-align: right;
   
 }
@@ -174,6 +192,7 @@ a {
   width: 100%;
   & h1 {
     color: #fff;
+    font-family: 'Proza Libre', sans-serif;
     font-size: 4vw;
     margin: 2rem 0;
     max-width: 800px;
@@ -303,12 +322,16 @@ a {
   .col {
     margin-bottom: 1.5rem;
     text-align: left;
+    width: 100%;
   }
 
   .separator {
      width: 90%;
   }
 
+  .navbar {
+    height: 70px;
+  }
   .navigation {
     & a {
       &:not(#logo) {
@@ -321,6 +344,9 @@ a {
       }
     }
   }
+  #mobile-menu-button {
+    top: 20px;
+  }
 
   #logo {
     padding-top: 0;
@@ -331,7 +357,7 @@ a {
   .hero-content {
     & h1 {
       font-size: 12vw;
-      margin-top: 0.5em;
+      margin-top: 0;
       order: 1;
     }
     & .cta-btn {
@@ -340,4 +366,10 @@ a {
       padding: 1em;
     }
   }
+
+  /* .newsletter-form {
+    & input {
+      max-width: 100%;
+    }
+  } */
 }
