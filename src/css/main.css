@@ -10,6 +10,7 @@
 :root {
   --primary-bg-color: #291711;
   --accent-color: #f0d242;
+  --light-bg-color: #f9faf3;
 }
 
 /*
@@ -21,6 +22,8 @@
 }
 
 body {
+  background-color: var(--light-bg-color);
+  /* background-color: #000; */
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -364,10 +367,4 @@ a {
       padding: 1em;
     }
   }
-
-  /* .newsletter-form {
-    & input {
-      max-width: 100%;
-    }
-  } */
 }
