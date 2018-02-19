@@ -87,7 +87,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
@@ -142,31 +142,43 @@ a {
 .separator {
   background-color: var(--primary-bg-color);
   display: block;
-  height: 10px;
+  height: 5px;
   margin: 20px auto;
   width: 75%;
 }
 
 .hero {
-  background-image: url("/images/rolls-table.jpg");
-  background-position: top right;
+  background-image: url("/images/rolls-table-trimmed.jpg");
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   min-height: 40vh;
   padding: 2rem;
   text-align: right;
+  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 1200px;
+  width: 100%;
   & h1 {
     color: #fff;
-    font-size: 6vw;
-    margin-bottom: 2rem;
+    font-size: 4vw;
+    margin: 2rem 0;
+    max-width: 800px;
   }
   & .cta-btn {
-    font-size: 1.2em;
-    margin-right: 200px;
+    font-size: 1.5em;
+    font-weight: 600;
     min-width: 200px;
+    opacity: 0.9;
+    padding: 1.2em;
   }
 }
 
@@ -309,12 +321,18 @@ a {
     padding-top: 0;
   }
   .hero {
+    justify-content: center;
+  }
+  .hero-content {
     & h1 {
-      font-size: 10vw;
-      margin-top: 1em;
+      font-size: 12vw;
+      margin-top: 0.5em;
+      order: 1;
     }
     & .cta-btn {
       margin-right: 0;
+      order: 2;
+      padding: 1em;
     }
   }
 }
