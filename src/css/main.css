@@ -11,6 +11,7 @@
   --primary-bg-color: #291711;
   --accent-color: #f0d242;
   --light-bg-color: #f9faf3;
+  --gray-blue: #97a19a;
 }
 
 /*
@@ -203,8 +204,12 @@ input[type="submit"] {
   text-align: center;
   text-transform: uppercase;
   width: auto;
+
+  background-color: rgba(151, 161, 154, 0.7);
+  color: #f7f5f1;
   &.btn-accent {
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
+    
   }
   &.btn-lg {
     font-size: 1.3em;
@@ -250,10 +255,12 @@ input[type="submit"] {
     max-width: 800px;
   }
   & .cta-btn {
+    background-color: #f7f5f1;
+    color: #c4872d;
     font-size: 1.5em;
     font-weight: 600;
     min-width: 200px;
-    opacity: 0.95;
+    opacity: 1;
     padding: 1.2em;
   }
 }
@@ -292,6 +299,7 @@ input[type="submit"] {
     width: 100%;
     &.submit-btn {
       border: none;
+      /* border-width: 3px; */
       padding: 1em;
       max-width: 200px;
       word-wrap: nowrap;
@@ -301,6 +309,7 @@ input[type="submit"] {
 
 .about-section {
   background-color: #97a19a;
+  background-color: rgba(151, 161, 154, 0.7);
   & img {
     width: 100%;
   }
@@ -314,6 +323,8 @@ input[type="submit"] {
     margin-bottom: 2em;
   }
   & a.btn {
+    background-color: #f7f5f1;
+    color: #c4872d;
     max-width: 200px;
     word-wrap: nowrap;
   }
