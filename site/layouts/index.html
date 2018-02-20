@@ -1,6 +1,4 @@
-{{ partial "header" . }}
-
-{{ $products := getJSON "/data/products.json" }}
+{{ partial "header" . }} {{ $products := getJSON "/data/products.json" }}
 
 <div class="wrapper">
   <section class="hero">
@@ -12,7 +10,7 @@
   <!-- <section class="promo">
     <span>Display promo code PROMO2018 here.</span>
   </section> -->
-  
+
   <!-- <section class="section">
     <div class="container">
       {{ range $products }} {{ partial "product.html" . }} {{ end }}
@@ -24,15 +22,37 @@
     <div class="container">
       <div class="row col-2">
         <div class="col">
-          <h3>Save 10% off of your next order!</h3>
-          <p>Sign up for LoveLee Rolls news and promotions, and we'll send you a promo code for 10% off your next order.</p>
+          <h3>Stay in touch!</h3>
+          <p>Like us, follow us, tweet us, and message us! Let us know how we're doing, and keep up with the latest LoveLee
+            news and promotions!</p>
+          <ul class="social-nav">
+            <li class="social-icon">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- <h3>Save 10% off of your next order!</h3> -->
+          
         </div>
         <div class="col">
           <!-- <form class="newsletter-form">
             <input type="email" placeholder="your@email.com">
             <input type="submit" value="SUBSCRIBE" class="btn btn-accent submit-btn">
           </form> -->
-          <button id="newsletterSignupButton" class="btn btn-accent submit-btn">Subscribe</button>
+          <h3>Save 10% off of your next order!</h3>
+          <p>Join our mailing list, and we'll send you a promo code for 10% off your next order.</p>
+          <button id="newsletterSignupButton" class="btn btn-accent submit-btn">Join</button>
         </div>
       </div>
     </div>
@@ -46,7 +66,10 @@
         </div>
         <div class="col">
           <h3>How we started</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum sed repellendus enim quam maxime, illo, facere nisi dolores quaerat unde explicabo sequi facilis nesciunt. Voluptatibus porro facilis odit soluta sit cum, voluptates consequatur autem quae omnis libero ratione rerum sint nisi eveniet aliquid quam possimus obcaecati tempora voluptate sapiente!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum sed repellendus enim quam maxime, illo, facere
+            nisi dolores quaerat unde explicabo sequi facilis nesciunt. Voluptatibus porro facilis odit soluta sit cum, voluptates
+            consequatur autem quae omnis libero ratione rerum sint nisi eveniet aliquid quam possimus obcaecati tempora voluptate
+            sapiente!</p>
           <a href="#" class="btn btn-accent">Read Our Story</a>
         </div>
       </div>
@@ -58,17 +81,20 @@
       <div class="row col-3">
         <!-- COL 1 -->
         <div class="col testimonial">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim, sunt vitae delectus obcaecati officia quisquam et illo aspernatur temporibus."</p>
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem enim, sunt vitae delectus obcaecati officia quisquam
+            et illo aspernatur temporibus."</p>
           <p>--Facebook user</p>
         </div>
         <!-- COL 2 -->
         <div class="col testimonial">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure dolore rerum cumque laboriosam non aperiam minima dolor. Voluptas, accusantium."</p>
+          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure dolore rerum cumque laboriosam non aperiam
+            minima dolor. Voluptas, accusantium."</p>
           <p>--John Smith</p>
         </div>
         <!-- COL 3 -->
         <div class="col testimonial">
-          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus itaque mollitia vel illum non nam recusandae sapiente dolor officiis?"</p>
+          <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus itaque mollitia vel illum non nam
+            recusandae sapiente dolor officiis?"</p>
           <p>--Catering Customer</p>
         </div>
       </div>
@@ -89,7 +115,9 @@
 
 <div class="modal-wrapper" id="newsletterSignupModal">
   <div class="modal-container">
-    <div class="closeModalBtn"><i class="fal fa-times fa-2x"></i></div> 
+    <div class="closeModalBtn">
+      <i class="fal fa-times fa-2x"></i>
+    </div>
     <h3>Save 10% off of your next order!</h3>
     <p>Sign up for LoveLee Rolls news and promotions, and we'll send you a promo code for 10% off your next order.</p>
     <form class="newsletter-form">
