@@ -28,10 +28,11 @@
           <p>Sign up for LoveLee Rolls news and promotions, and we'll send you a promo code for 10% off your next order.</p>
         </div>
         <div class="col">
-          <form class="newsletter-form">
+          <!-- <form class="newsletter-form">
             <input type="email" placeholder="your@email.com">
             <input type="submit" value="SUBSCRIBE" class="btn btn-accent submit-btn">
-          </form>
+          </form> -->
+          <button id="newsletterSignupButton" class="btn btn-accent submit-btn">Subscribe</button>
         </div>
       </div>
     </div>
@@ -86,7 +87,16 @@
   <section class="footer"></section>
 </div>
 
-
-
+<div class="modal-wrapper" id="newsletterSignupModal">
+  <div class="modal-container">
+    <div class="closeModalBtn"><i class="fal fa-times fa-2x"></i></div> 
+    <h3>Save 10% off of your next order!</h3>
+    <p>Sign up for LoveLee Rolls news and promotions, and we'll send you a promo code for 10% off your next order.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="your@email.com">
+      <input type="submit" value="SUBSCRIBE" class="btn btn-accent submit-btn">
+    </form>
+  </div>
+</div>
 
 {{ partial "footer" . }}

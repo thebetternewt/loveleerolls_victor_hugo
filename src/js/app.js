@@ -4,6 +4,7 @@
 console.log("🦊 Hello! Edit me in src/js/app.js");
 
 $(function() {
+  // MOBILE MENU
   $("#mobile-menu-button").click(function() {
     console.log("menu button clicked!");
 
@@ -20,8 +21,20 @@ $(function() {
     sleep(250).then(() => {
       $("#mobileNavContainer").hide();
     });
-    
     return false;
+  });
+
+  // NEWSLETTER SIGNUP MODAL
+  $("#newsletterSignupButton").click(function() {
+    animate("#newsletterSignupModal", "fadeIn");
+    $("#newsletterSignupModal").show();
+  });
+
+  $(".closeModalBtn").click(function() {
+    animate("#newsletterSignupModal", "fadeOut");
+    sleep(250).then(() => {
+      $("#newsletterSignupModal").hide();
+    });
   });
 
   // Animate
