@@ -20,7 +20,7 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}  
       - {label: "Slug", name: "slug", widget: "string" }
-      - {label: "Category", name: "categories", widget: "list"}
+      - {label: "Category", name: "categories", widget: "string"}
 
 
   - label: "Settings"
