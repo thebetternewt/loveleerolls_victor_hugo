@@ -1,10 +1,6 @@
-<div class="column">
-    <h2 class="title">{{ .name }}</h2>
-        <img src="{{ .image }}">
-        <p>{{ .description }}</p>
-        <button class="card-footer-item snipcart-add-item" data-item-id="{{ .id }}" data-item-name="{{ .name }}" data-item-price="{{ .price }}"
-            data-item-url="{{ .url }}">
-            <i class="fa fa-shopping-cart fa-3x"></i>
-            Add to cart
-        </button>
+<div class="col product" >
+    <div class="product-thumb" style="background-image: url('{{.Params.image}}')"></div>
+    <h3>{{.Title}}</h3>
+    <p>{{.Params.description}}</p>
+    <button class="btn">Add to Cart</button>
 </div>

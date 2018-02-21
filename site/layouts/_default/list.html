@@ -1,0 +1,11 @@
+
+
+{{ define "main" }}
+  <ul>
+      {{ range .Data.Pages }}
+    <li>
+      <a src="{{ .URL }}">{{.Title}}</a>
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}

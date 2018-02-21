@@ -8,7 +8,7 @@ media_folder: "site/static/images/uploads" # Media files will be stored in the r
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: 'products'
+  - name: 'product'
     label: 'Products'
     folder: 'site/content/products'
     slug: "{{slug}}"

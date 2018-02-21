@@ -1,6 +1,11 @@
-{{ partial "header" . }} {{ $products := getJSON "/data/products.json" }}
+{{ partial "head" . }}
 
-<div class="wrapper">
+<body> 
+
+{{ partial "navigation" .}}
+{{ $products := getJSON "/data/products.json" }}
+
+<div class="content-wrapper">
   <section class="hero">
     <div class="hero-content">
       <h1> “Melt in your mouth cinnamon rolls...”</h1>
@@ -92,24 +97,16 @@
       </div>
     </div>
   </section>
-  <!-- <section class="section action-section">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <a href="#" class="btn btn-accent btn-lg">Shop Rolls &amp; Coffee</a>
-        </div>
-      </div>
-    </div>
-  </section> -->
+
   <section class="section products-section">
   <div class="container">
     <h2>LoveLee Items</h2>
     <div class="row col-2">
-      <a class="col product" href="#">
+      <a class="col product" href="/categories/rolls">
         <div class="product-thumb" style="background-image: url('/images/cinnamon-rolls.jpg')"></div>
-        <h3>Cinnamon Rolls</h3>
+        <h3>Rolls</h3>
       </a>
-      <a class="col product" href="#">
+      <a class="col product" href="/categories/coffee">
         <div class="product-thumb" style="background-image: url('/images/coffee-beans.jpg')"></div>
         <h3>Coffee</h3>
       </a>
@@ -122,11 +119,7 @@
     </div>
   </div>
 </section>
-  <!-- <div class="separator"></div> -->
-  <section class="footer"></section>
 </div>
-
-
 
 <div class="modal-wrapper" id="newsletterSignupModal">
   <div class="modal-container">
@@ -143,3 +136,6 @@
 </div>
 
 {{ partial "footer" . }}
+
+</body>
+</html>

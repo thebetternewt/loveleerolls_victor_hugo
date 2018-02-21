@@ -1,0 +1,17 @@
+
+
+{{ define "main" }}
+<div class="product-page">
+    <section class="section products-section" style="padding-top: 80px">
+    <div class="container">
+        <h1>{{.Title}}</h1>
+        <div class="row col-2">
+            {{ range .Data.Pages }}
+                {{ partial "product"  . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+</div>
+
+{{ end }}
