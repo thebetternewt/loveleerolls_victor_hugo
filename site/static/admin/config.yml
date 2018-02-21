@@ -20,6 +20,15 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}  
       - {label: "Slug", name: "slug", widget: "string" }
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        field:
+          - label: Category
+            name: category
+            widget: "select"
+            options: ["rolls", "coffee", "other"]
+
 
   - label: "Settings"
     name: "Settings"
