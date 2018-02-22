@@ -9,7 +9,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: 'product'
-    label: 'Product'
+    label: 'Products'
     folder: 'site/content/products'
     slug: "{{slug}}"
     create: true
