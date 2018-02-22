@@ -5,5 +5,13 @@
 <div class="col product-info">
     <h3>{{.Title}}</h3>
     <p>{{.Params.description}}</p>
-    <button class="btn">Add to Cart</button>
+    <button 
+        class="btn snipcart-add-item"
+        data-item-id="{{.Params.sku}}"
+        data-item-name="{{.Title}}"
+        data-item-price="{{.Params.price}}"
+        data-item-url="{{.URL}}"
+        data-item-description="{{.Params.description}}">
+        Add to Cart
+    </button>
 </div>

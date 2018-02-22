@@ -23,7 +23,7 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    {{ partial "navigation" }}
+    {{ partialCached "navigation" . }}
     
     <div class="content-wrapper">
         {{ block "main" . }}
@@ -31,6 +31,6 @@
     </div>
     
 
-    {{ partial "footer" }}
+    {{ partialCached "footer" . }}
 </body>
 </html>
