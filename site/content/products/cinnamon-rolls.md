@@ -3,7 +3,7 @@ title: Cinnamon Rolls
 sku: L-002
 price: '10.00'
 image: /images/cinnamon-rolls.jpg
-description: 'Delicious dinner rolls. So LoveLee, you''d think they were homemade!'
+description: Delicious cinnamon rolls. Melt in your mouth good...
 slug: cinnamon-rolls
 categories:
   - rolls
