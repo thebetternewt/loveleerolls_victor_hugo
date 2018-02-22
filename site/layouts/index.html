@@ -1,24 +1,13 @@
 {{ partial "head" . }}
 
 <body> 
-
-{{ partial "navigation" .}}
-{{ $products := getJSON "/data/products.json" }}
-
 <div class="content-wrapper">
   <section class="hero">
     <div class="hero-content">
       <h1> “Melt in your mouth cinnamon rolls...”</h1>
-      <button class="btn cta-btn">Order Now!</button>
+      <a href="/categories/rolls" class="btn cta-btn">Order Now!</a>
     </div>
   </section>
-
-  <!-- <section class="section">
-    <div class="container">
-      {{ range $products }} {{ partial "product.html" . }} {{ end }}
-    </div>
-    </div>
-  </section> -->
 
   <section class="section news-signup">
     <div class="container">
@@ -102,11 +91,11 @@
   <div class="container">
     <h2>LoveLee Items</h2>
     <div class="row col-2">
-      <a class="col product" href="/categories/rolls">
+      <a class="col product-link" href="/categories/rolls">
         <div class="product-thumb" style="background-image: url('/images/cinnamon-rolls.jpg')"></div>
         <h3>Rolls</h3>
       </a>
-      <a class="col product" href="/categories/coffee">
+      <a class="col product-link" href="/categories/coffee">
         <div class="product-thumb" style="background-image: url('/images/coffee-beans.jpg')"></div>
         <h3>Coffee</h3>
       </a>
