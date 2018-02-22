@@ -7,6 +7,5 @@ description: These are some delicious cinnamon rolls.
 slug: dinner-rolls
 categories:
   - rolls
-  - coffee
 ---
 
