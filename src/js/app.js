@@ -37,12 +37,18 @@ $(function() {
     });
   });
 
+  // Animate shopping cart button when item added to cart
+  $(".snipcart-add-item").click(function () {
+    animate("#shopping-bag-container", "rubberBand");
+    animate("#mobile-shopping-bag-container", "rubberBand");
+  });
+
   // Animate
   function animate(element, animation) {
     $(element).addClass("animated " + animation);
     var wait = setTimeout(function() {
       $(element).removeClass("animated " + animation);
-    }, 300);
+    }, 400);
   }
 
   function sleep(time) {
