@@ -552,12 +552,6 @@ input[type="submit"] {
   height: 100px;
 }
 
-/* Round button corners */
-/* .btn, input[type="button"],
-input[type="submit"] {
-  border-radius: 7px;
-} */
-
 /* ABOUT PAGE */
 
 /* Video wrapper for YouTube Videos to adapt to mobile */
@@ -609,6 +603,7 @@ input[type="submit"] {
 
 .pretty-form {
   border: 2px solid #ddd;
+  border-radius: 0 !important; /* Override iOS rounded input fields. */
   display: block;
   margin: 0.2em 0 1em;
   padding: 0.6em 1em;
