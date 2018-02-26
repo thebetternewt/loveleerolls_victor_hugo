@@ -62,6 +62,9 @@
   // Cycle through all dates between today and 2 months from today.
   while (d.isBefore(moment(today).add(2, 'month'))) {
     // Add days that are not blacked out to delivery date list and are in delivery days list.
+
+    // TODO: Pull out logic for checking dates with blackout dates into a function
+    // ^^^^^^^^^^^^^^^^^^^^^
     if (!d.isBetween(moment(blackoutDates[1].start_date), moment(blackoutDates[1].end_date).add(1, 'day')) &&
         deliveryDays.includes(d.day())) {
       console.log(d.format("YYYY-MM-DD"));
